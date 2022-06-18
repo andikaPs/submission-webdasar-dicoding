@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter&family=Source+Sans+Pro:wght@400;600&display=swap");
+
+:root {
+  --dark: #0c1b4d;
+  --dark-light: #0c1b4d65;
+  --primary: #4a72ff;
+  --primary-light: #4a72ff20;
+  --font-size: 0.98rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f4f7ff;
+}
+
+.container {
+  width: 80%;
+  margin: 1.5rem auto 0;
+}
+
+.btn {
+  display: inline-block !important;
+  padding: 0.7em 1.7em;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: var(--font-size);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center > svg {
+  margin-left: 1rem;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+  box-shadow: 0 6px 12px var(--primary-light);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.bg-primary:hover {
+  transform: translateY(3px);
+  box-shadow: 0 6px 25px var(--primary-light);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light) !important;
+  box-shadow: 0 6px 12px var(--primary-light);
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+.bg-primary-light:hover {
+  transform: translateY(3px);
+  box-shadow: 0 6px 25px var(--primary-light);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav .img {
+  width: 2rem;
+}
+nav > .img > img {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1.3rem;
+}
+nav .btn {
+  font-weight: 600;
+}
+ul li a {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: var(--font-size);
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+li > a:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.active {
+  font-weight: 600;
+}
+
+nav > button#menu {
+  display: none;
+}
+
+.header-content {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content aside {
+  display: flex;
+  flex-direction: column;
+}
+aside article h6,
+h1,
+p {
+  margin-bottom: 1rem;
+}
+
+article h6 {
+  color: var(--primary);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: var(--font-size);
+}
+article h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+}
+article p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: var(--font-size);
+  font-weight: 400;
+  color: var(--dark-light);
+  word-spacing: 5px;
+  line-height: 1.5rem;
+}
+
+.header-content > aside > .btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.btn-group a:last-child {
+  margin: 0 0.8rem;
+}
+
+.header-content aside section {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.header-content section > .flex-icon {
+  display: flex;
+  margin-right: 5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.header-content section > .flex-icon > svg {
+  margin-right: 2rem;
+}
+
+.flex-icon > .description {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-icon > .description > h4 {
+  color: var(--dark-light);
+  font-size: 0.7rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.flex-icon > .description > span {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-light);
+  padding: 3.5rem;
+  border-radius: 15px;
+}
+
+main {
+  margin: 10rem 0;
+}
+
+main .fitur {
+  display: flex;
+  justify-content: center;
+}
+
+.fitur > header {
+  text-align: center;
+  max-width: 45%;
+}
+.fitur > header > h1 {
+  margin: 1rem 0;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.fitur > header > h5 {
+  font-weight: 600;
+}
+.fitur > header > h5,
+.fitur > header > h1 {
+  color: var(--primary);
+}
+
+.fitur > header > h5,
+.fitur > header > p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.fitur > header > p {
+  color: var(--dark-light);
+  word-spacing: 5px;
+  line-height: 1.5rem;
+}
+
+main .fitur-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+.fitur-list > article {
+  width: 30%;
+  text-align: center;
+}
+.fitur-list > article > .img-article {
+  width: 50%;
+  margin: 0 auto;
+}
+.fitur-list > article:nth-child(2) > .img-article {
+  width: 60%;
+  margin: 0 auto;
+}
+.fitur-list > article > .img-article > img {
+  width: 100%;
+}
+.fitur-list > article > h2 {
+  margin: 1rem 0;
+  color: var(--primary);
+}
+.fitur-list > article > p {
+  color: var(--dark-light);
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+.author > .img-author {
+  width: 47%;
+  position: relative;
+}
+.img-author > .name-area {
+  position: absolute;
+  left: 6rem;
+  bottom: 8rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.name-area h1,
+.name-area p {
+  margin: 0;
+}
+.name-area h1 {
+  font-size: var(--font-size);
+  margin-bottom: 5px;
+}
+
+.author > .img-author > img {
+  width: 100%;
+}
+.author > section {
+  width: 50%;
+  margin: 6rem 0;
+}
+.author > section > h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+}
+.author > section > h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.author > section > p {
+  color: var(--dark-light);
+  word-spacing: 5px;
+  line-height: 1.5rem;
+}
+
+.author > section > .contact {
+  color: var(--dark-light);
+  font-size: var(--font-size);
+}
+
+footer {
+  padding: 7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-light);
+  border-radius: 3px;
+}
+
+footer .span-1:nth-child(1) {
+  width: 80%;
+}
+footer .span-1 {
+  width: 50%;
+  margin: 0 2rem;
+}
+
+.span-1 .logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 80%;
+}
+.span-1 h1 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin: 0;
+}
+.span-1 h5 {
+  color: var(--dark-light);
+  margin: 0;
+}
+.span-1 p {
+  font-size: var(--font-size);
+  color: var(--dark-light);
+  margin: 1rem 0;
+}
+.span-1 ul {
+  list-style: none;
+}
+
+.span-1 ul li {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1rem 0;
+  font-weight: 600;
+  color: var(--dark-light);
+}
+
+.span-1 .social-media {
+  display: flex;
+  align-items: center;
+}
+.social-media .box {
+  padding: 0.5rem 0.8rem;
+  background-color: #0c1b4d10;
+  border-radius: 10px;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+/* Breakpoint Mobile */
+@media screen and (max-width: 640px) {
+  nav .img {
+    max-width: 5rem;
+  }
+  nav {
+    position: relative;
+  }
+  nav > ul {
+    display: none;
+  }
+  nav a.btn {
+    display: none !important;
+  }
+  nav > ul.visible {
+    position: absolute;
+    display: block;
+    top: 3.5rem;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  nav > a.visible {
+    position: absolute;
+    display: block !important;
+    visibility: visible;
+    top: 16rem;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  nav ul.visible li a {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+  }
+
+  nav > button#menu {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .header-content {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .header-content > aside {
+    order: 2;
+  }
+
+  .header-content > aside > article h1 {
+    font-size: 2rem;
+  }
+  .header-content > aside > .btn-group {
+    flex-wrap: wrap;
+  }
+  .header-content > aside > .btn-group > a {
+    display: inline-block;
+    margin: 1rem auto;
+  }
+  .header-content section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-content section > .flex-icon {
+    margin: 1rem 0.5rem;
+  }
+  .flex-icon .description h4 {
+    font-size: 1rem;
+  }
+  .flex-icon .description span {
+    font-size: 1.9rem;
+  }
+
+  .header-content > section {
+    order: 1;
+  }
+
+  .header-content > section > img {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+  .brand img {
+    margin: 1rem 0;
+  }
+
+  .fitur > header {
+    max-width: 100%;
+  }
+
+  .fitur > header > h1 {
+    white-space: unset;
+  }
+  main .fitur-list {
+    flex-direction: column;
+  }
+  .fitur-list > article {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .fitur-list > article > p {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+
+  .author {
+    flex-direction: column;
+  }
+  .author > .img-author {
+    width: 100%;
+  }
+  .img-author > .name-area {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+  .name-area h1 {
+    font-size: 1rem;
+  }
+
+  .author > section {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .author > section > .contact {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+
+  footer .span-1 {
+    width: 100% !important;
+    margin: 1rem 0;
+  }
+  .span-1 h1 {
+    font-size: 1.2rem;
+  }
+  .span-1 h5 {
+    font-size: 0.78rem;
+  }
+  .span-1 p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .span-1 ul {
+    display: block !important;
+  }
+  .span-1 ul li {
+    margin: 1rem 0 !important;
+  }
+}
+
+/* Breakpoint Tablet */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size: 1.3rem;
+  }
+  nav {
+    position: relative;
+  }
+  nav > ul {
+    display: none;
+  }
+  nav a.btn {
+    display: none !important;
+  }
+  nav > ul.visible {
+    position: absolute;
+    display: block;
+    top: 3.5rem;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  nav > a.visible {
+    position: absolute;
+    display: block !important;
+    visibility: visible;
+    top: 16rem;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  nav ul.visible li a {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+  }
+
+  nav > button#menu {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .header-content {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .header-content > aside {
+    order: 2;
+  }
+
+  .header-content > aside > article h1 {
+    font-size: 2rem;
+  }
+  .header-content > aside > .btn-group {
+    flex-wrap: wrap;
+  }
+  .header-content > aside > .btn-group > a {
+    display: inline-block;
+    margin: 1rem auto;
+  }
+  .header-content section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-content section > .flex-icon {
+    margin: 0 2rem;
+  }
+  .flex-icon .description h4 {
+    font-size: 0.7rem;
+  }
+  .flex-icon .description span {
+    font-size: 1.2rem;
+  }
+
+  .header-content > section {
+    order: 1;
+  }
+
+  .header-content > section > img {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+  .brand img {
+    margin: 1rem 0;
+  }
+
+  .fitur > header {
+    max-width: 100%;
+  }
+
+  .fitur > header > h1 {
+    white-space: unset;
+  }
+  main .fitur-list {
+    flex-direction: column;
+  }
+  .fitur-list > article {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .author {
+    flex-direction: column;
+  }
+  .author > .img-author {
+    width: 100%;
+  }
+  .img-author > .name-area {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+  .name-area h1 {
+    font-size: 1rem;
+  }
+
+  .author > section {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .author > section > .contact {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+
+  footer .span-1 {
+    width: 100% !important;
+    margin: 1rem 0;
+  }
+  .span-1 h1 {
+    font-size: 1.2rem;
+  }
+  .span-1 h5 {
+    font-size: 0.78rem;
+  }
+  .span-1 p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .span-1 ul {
+    display: flex;
+  }
+  .span-1 ul li:nth-child(1) {
+    margin-left: 0;
+  }
+  .span-1 ul li {
+    margin: 1rem;
+  }
+}
